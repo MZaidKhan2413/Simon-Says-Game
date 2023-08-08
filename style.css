@@ -1,0 +1,99 @@
+*{
+margin : 0px;
+padding : 0px;
+box-sizing: border-box;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    background-color: #EEEDED;
+}
+
+.gameContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.gameContainer h1,h2{
+    padding: 1rem 0;
+    width: 100vw;
+    text-align: center;
+    background-color: #606C5D;
+    color: azure;
+}
+.boxDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    height: 10rem;
+    width: 10rem;
+    border: .125rem solid black;
+    border-radius: 10%;
+    margin: 1rem;
+}
+
+.red{
+    background-color: #D71313;
+}
+.yellow{
+    background-color: #F0DE36;
+}
+.green{
+    background-color: #5FD068;
+}
+.blue{
+    background-color: #0D1282;
+}
+
+.start{
+    /* display: none; */
+    margin-top: 5rem;
+    height: 2rem;
+    width: 7.5rem;
+    font-weight: 700;
+    background-color: #606C5D;
+    color: white;
+    border: .125rem solid black;
+    border-radius: 1rem;
+}
+.start:active{
+    background-color: #323930;
+}
+
+
+@media screen and (min-width: 768px){
+    .start{
+        display: none;
+    }
+}
+@media screen and (max-width : 650px) {
+    html{
+        font-size: 80%;
+    }
+}
+@media screen and (max-width : 475px) {
+    .start{
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    .boxDiv{
+        margin-top: 10rem;
+    }
+}
+@media screen and (max-width : 350px) {
+    html{
+        font-size: 67.5%;
+    }
+}
+
+
+
+.flash{
+    background-color: white;
+}
+.fail{
+    background-color: red;
+}
